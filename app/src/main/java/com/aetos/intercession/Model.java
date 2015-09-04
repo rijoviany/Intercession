@@ -13,8 +13,8 @@ public class Model extends ParseObject {
 
     }
 
-    public static String key = "IvVwtSwglXXDrwffWiWroeyNwSfI6yNkKQpLJNs8";
-    public static String key2 = "W9I7XC4HTBK1RX661sf7ar8jvGJ0AUJJ21wSdyyh";
+    public static String key = "";
+    public static String key2 = "";
 
     public String getPrayer() {
         return getString("prayer");
