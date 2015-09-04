@@ -35,7 +35,7 @@ public class MainActivity extends ActionBarActivity {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         //URI.create("http://va");
-        Parse.initialize(this, "IvVwtSwglXXDrwffWiWroeyNwSfI6yNkKQpLJNs8", "W9I7XC4HTBK1RX661sf7ar8jvGJ0AUJJ21wSdyyh");
+        Parse.initialize(this, Model.key, Model.key2);
         ParseInstallation.getCurrentInstallation().saveInBackground();
         webView.loadUrl("file:///android_asset/webpage.html");
         webView.setVisibility(View.VISIBLE);

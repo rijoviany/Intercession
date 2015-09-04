@@ -39,7 +39,7 @@ public class Intentions extends ActionBarActivity {
 
         // ab.setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_intentions);
-        Parse.initialize(getApplicationContext(), "IvVwtSwglXXDrwffWiWroeyNwSfI6yNkKQpLJNs8", "W9I7XC4HTBK1RX661sf7ar8jvGJ0AUJJ21wSdyyh");
+        Parse.initialize(getApplicationContext(), Model.key, Model.key2);
         ParseUser.enableAutomaticUser();
         ParseACL defaultACL = new ParseACL();
         ParseACL.setDefaultACL(defaultACL, true);
