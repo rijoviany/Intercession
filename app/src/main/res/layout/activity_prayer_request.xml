@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    tools:context="com.aetos.intercession.PrayerRequest"
+    android:background="#444444">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name :"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:autoText="false"
+        android:textColor="#eeeeee"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtName"
+        android:hint="Your Name"
+        android:capitalize="words"
+        android:textColor="#ffffff"
+        android:textColorHint="#666666"
+        android:typeface="serif"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignRight="@+id/txtIntention"
+        android:layout_alignEnd="@+id/txtIntention"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Place :"
+        android:id="@+id/textView3"
+        android:textColor="#eeeeee"
+        android:paddingTop="3dp"
+        android:layout_alignBaseline="@+id/txtPlace"
+        android:layout_alignBottom="@+id/txtPlace"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtPlace"
+        android:hint="Your Place/ Ministry"
+        android:capitalize="words"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:paddingLeft="5dp"
+        android:textColorHint="#666666"
+        android:layout_below="@+id/txtName"
+        android:layout_alignLeft="@+id/txtName"
+        android:layout_alignStart="@+id/txtName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Prayer Intention :"
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/txtDate"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/txtIntention"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="top|left"
+        android:autoText="false"
+        android:capitalize="sentences"
+        android:lines="8"
+        android:maxLines="12"
+        android:phoneNumber="false"
+        android:typeface="serif"
+        android:layout_marginTop="5dp"
+        android:textColor="#222222"
+        android:background="#aaaaaa" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btnSubmit"
+        android:padding="7dp"
+        android:layout_below="@+id/txtIntention"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtPlace"
+        android:layout_alignEnd="@+id/txtPlace"
+        android:layout_marginTop="20dp"
+        style="@android:style/Theme.Black"
+        android:background="#dddddd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date   :"
+        android:id="@+id/textView"
+        android:textColor="#eeeeee"
+        android:paddingTop="3dp"
+        android:layout_alignBaseline="@+id/txtDate"
+        android:layout_alignBottom="@+id/txtDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/txtDate"
+        android:layout_below="@+id/txtPlace"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/txtPlace"
+        android:layout_alignStart="@+id/txtPlace"
+        android:editable="true"
+        android:hint="Date of Intercession"
+        android:textColorHint="#666666"
+        android:textColor="#ffffff" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priority"
+        android:id="@+id/switch1"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textColorHint="#aaaaaa"
+        android:layout_above="@+id/txtIntention"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
